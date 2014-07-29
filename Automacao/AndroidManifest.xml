@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.brasinha.automacao"
+    android:versionCode="1"
+    android:versionName="1.0" >  
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application        
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity 
+            android:name="br.com.brasinha.automacao.ActivityLogin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.brasinha.automacao.Comodo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="br.com.brasinha.automacao.MakeComodo"
+            android:label="@string/make_comodo" >
+        </activity>
+       
+        <activity
+            android:name="br.com.brasinha.automacao.Settings" >
+        </activity>
+        <activity 
+            android:name="br.com.brasinha.automacao.CadastroUserActivity">
+        </activity>
+        
+    </application>
+
+</manifest>

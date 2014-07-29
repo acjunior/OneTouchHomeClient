@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Automacao</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_comodo">Cadastrar Novo Cômodo</string>
+    <string name="comodo">Comodo</string>
+    <string name="lamp">Lampada</string>
+    <string name="make_comodo">Make Comodo</string>
+    <string name="servidor">Servidor</string>
+    <string name="hintServer">0.0.0.0</string>
+    <string name="port">Porta</string>
+    <string name="hintPort">5000 - 65535</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Salvar</string>
+    <string name="user">Usuário</string>
+    <string name="pass">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="new_user">Novo Usuário</string>
+    <string name="confirm_pass">Confirmar Senha</string>
+    <string name="email">E-Mail</string>
+    <string name="titulo_app">One Touch Home</string>
+    <string name="cadastrar">Cadastrar Usuário</string>
+    <string name="name">Nome</string>
+    <string name="new_item">Novo Item</string>
+    <string name="type">Tipo</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="name_item">Nome Item</string>
+    <string name="config_con">Configurar Conexão</string>
+    <string name="exit">Sair</string>
+
+</resources>

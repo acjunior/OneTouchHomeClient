@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp" >
+    
+	<LinearLayout
+   		android:id="@+id/make_comodoLinearLayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+
+    	<TextView
+        	android:id="@+id/tituloComodoTextView"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:paddingBottom="20dp"
+        	android:text="@string/titulo_app"
+        	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    	<TextView
+        	android:id="@+id/comodoTextView"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingBottom="5dp"
+        	android:paddingTop="5dp"
+        	android:text="@string/comodo"
+        	android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    	<EditText
+        	android:id="@+id/nomeEditText"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"
+        	android:inputType="text" >
+        	<requestFocus />
+    	</EditText>
+
+    	<RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:paddingTop="10dp" >
+
+        	<TextView
+            	android:id="@+id/itemTextView"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+           		android:layout_alignParentTop="true"
+           	 	android:text="@string/new_item"
+            	android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        	<ImageView
+        	    android:id="@+id/delImageView"
+        	    android:layout_width="25dp"
+        	    android:layout_height="25dp"
+        	    android:layout_alignBottom="@+id/itemTextView"
+        	    android:layout_alignParentRight="true"
+        	    android:layout_marginRight="30dp"
+        	    android:clickable="true"
+        	    android:src="@drawable/button_delete" />
+
+        	<ImageView
+        	    android:id="@+id/addImageView"
+        	    android:layout_width="25dp"
+        	    android:layout_height="25dp"
+        	    android:layout_alignBottom="@+id/itemTextView"
+        	    android:layout_alignParentRight="true"
+        	    android:clickable="true"
+        	    android:src="@drawable/button_add_icon" />
+
+    	</RelativeLayout>
+    	
+    	<ListView
+    	    android:id="@+id/comodoListView"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:divider="#000000"
+    	    android:dividerHeight="2sp"
+    	    android:paddingBottom="50dp"
+    	    android:paddingTop="10dp" >
+
+		</ListView>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_gravity="bottom"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/salvarMakeComodoButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:text="@string/save" />
+
+	    <Button
+	        android:id="@+id/cancelMakeComodoButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.5"
+	        android:text="@string/cancel" />
+
+	</LinearLayout>
+
+</RelativeLayout>
